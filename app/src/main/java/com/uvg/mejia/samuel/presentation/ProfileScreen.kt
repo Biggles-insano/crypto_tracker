@@ -26,12 +26,12 @@ fun ProfileScreen(navController: NavController, assetId: String, viewModel: Cryp
                 }
             )
         },
-        content = { padding ->  // Se utiliza el parámetro 'padding'
+        content = { padding ->  
             assetDetail?.let {
                 Column(
                     modifier = Modifier
-                        .padding(padding)  // Aplicamos el padding de Scaffold
-                        .padding(16.dp)   // Padding adicional personalizado
+                        .padding(padding)  
+                        .padding(16.dp)   
                 ) {
                     Text(text = "Details for Asset: ${it.name}")
                     Text(text = "Supply: ${it.supply}")
